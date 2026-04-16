@@ -590,6 +590,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JsonTest
   filename: test.json
+  prefabNames:
+  - Cube
+  - Sphere
+  - Capsule
+  - Cylinder
 --- !u!1 &404310485
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +625,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JsonTest
   filename: test.json
+  prefabNames:
+  - Cube
+  - Sphere
+  - Capsule
+  - Cylinder
 --- !u!4 &404310487
 Transform:
   m_ObjectHideFlags: 0

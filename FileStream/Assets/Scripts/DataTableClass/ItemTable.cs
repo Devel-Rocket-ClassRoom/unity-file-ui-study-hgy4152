@@ -23,7 +23,7 @@ public class ItemData
 
 public class ItemTable : DataTable
 {
-    private readonly Dictionary<string, ItemData> table = new Dictionary<string, ItemData>();
+    public readonly Dictionary<string, ItemData> table = new Dictionary<string, ItemData>();
 
     public override void Load(string filename)
     {
