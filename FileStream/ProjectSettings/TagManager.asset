@@ -7,6 +7,7 @@ TagManager:
   - Cube
   - Sphere
   - Capsule
+  - KeyButton
   layers:
   - Default
   - TransparentFX
