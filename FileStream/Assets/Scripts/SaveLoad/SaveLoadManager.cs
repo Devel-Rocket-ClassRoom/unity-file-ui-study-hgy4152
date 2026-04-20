@@ -1,5 +1,5 @@
 using UnityEngine;
-using SaveDataVC = SaveDataV3; // 버전 바뀔때마다 다 수정하면 번거로우니까 네임스페이스만 바꾸기
+using SaveDataVC = SaveDataV4; // 버전 바뀔때마다 다 수정하면 번거로우니까 네임스페이스만 바꾸기
 using Newtonsoft.Json;
 using System.IO;
 
@@ -12,7 +12,7 @@ public static class SaveLoadManager
     }
     public static SaveMode Mode { get; set; } = SaveMode.Text;
     // 현재 클라이언트의 버젼
-    public static int SaveDataVersion { get; } = 3;
+    public static int SaveDataVersion { get; } = 4;
     public static SaveDataVC Data { get; set; } = new SaveDataVC();
 
     private static readonly string SaveDirectory = $"{Application.persistentDataPath}/Save";

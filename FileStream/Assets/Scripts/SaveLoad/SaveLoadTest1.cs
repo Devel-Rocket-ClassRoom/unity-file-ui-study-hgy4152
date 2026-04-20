@@ -1,5 +1,5 @@
 using UnityEngine;
-using SaveDataVC = SaveDataV3;
+using SaveDataVC = SaveDataV4;
 public class SaveLoadTest1 : MonoBehaviour
 {
 
@@ -10,9 +10,6 @@ public class SaveLoadTest1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SaveLoadManager.Data = new SaveDataVC();
-            SaveLoadManager.Data.Name = "test3";
-            SaveLoadManager.Data.Gold = 4000;
-            //itemid는 DataManager.Get(itemId)으로 받아서 넣어도 됌
             SaveLoadManager.Save();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -20,7 +17,12 @@ public class SaveLoadTest1 : MonoBehaviour
 
             if(SaveLoadManager.Load())
             {
-                Debug.Log($"{SaveLoadManager.Data.Name}\n{SaveLoadManager.Data.Gold}\n{SaveLoadManager.Data.ItemId}");
+                //Debug.Log($"{SaveLoadManager.Data.Name}\n{SaveLoadManager.Data.Gold}\n{SaveLoadManager.Data.ItemId}");
+
+                foreach(var saveItemData in SaveLoadManager.Data.ItemList)
+                {
+                    Debug.Log(saveItemData.InstanceId);
+                }
 
             }
             else

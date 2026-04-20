@@ -18,11 +18,15 @@ public class DifficultyWindow : GenericWindow
     public Button applyButton;
     public Button cancelButton;
 
+
+    //저장
     private DifficultyData Data { get; set; } = new DifficultyData();
     private static JsonSerializerSettings settings = new JsonSerializerSettings();
+
     private string SaveDirectory;
     private string SavePath;
     private string fileName = "difficulty.json";
+
 
     private void Awake()
     {

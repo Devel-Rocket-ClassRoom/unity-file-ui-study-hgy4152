@@ -51,7 +51,8 @@ public class SaveDataV2 : SaveData
         string path = string.Format(DataTable.FormatPath, DataTableIds.Item);
         TextAsset textAsset = Resources.Load<TextAsset>(path);
 
-        saveData.list = DataTable.LoadCSV<ItemData>(textAsset.text);
+       saveData.list = DataTable.LoadCSV<ItemData>(textAsset.text);
+      
 
         // id 저장
         int index = Random.Range(0, saveData.list.Count);
@@ -76,9 +77,40 @@ public class SaveDataV3 : SaveData
 
     public override SaveData VersionUp()
     {
+        SaveDataV4 data = new SaveDataV4();
+        data.Name = Name;
+        data.Gold = Gold;
+        foreach (ItemData item in list)
+        {
+            SaveItemData itemData = new SaveItemData();
+            itemData.ItemData = DataTableManager.ItemTable.Get(item.Id);
+            data.ItemList.Add(itemData);
+
+
+        }
+        return data;
+    }
+}
+
+[System.Serializable]
+public class SaveDataV4 : SaveDataV3
+{
+    public List<SaveItemData> ItemList = new List<SaveItemData>();
+
+    public SaveDataV4()
+    {
+        Version = 4;
+
+    }
+
+    public override SaveData VersionUp()
+    {
         return new SaveDataV3();
     }
 }
+
+
+
 
 
 //수업내용

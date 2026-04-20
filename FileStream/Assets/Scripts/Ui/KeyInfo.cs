@@ -10,6 +10,8 @@ public class KeyInfo : MonoBehaviour
     void Start()
     {
 
+        // 키보드 같은 경우? 버튼마다 설정해주는게 더 좋은거 같음
+        // 조합키나 동시타, 연속키 같은거 구현하려면 그게 더 좋은듯
         Button[] allButtons = GetComponentsInChildren<Button>();
 
         foreach (Button btn in allButtons)

@@ -16,3 +16,11 @@ Character3Name,해골 왕
 Character1Desc,해골 병사.
 Character2Desc,해골 투사.
 Character3Desc,해골 왕.
+NAME, 이름
+DESC, 설명
+TYPE, 타입
+VALUE, 밸류
+COST, 비용
+WEAPON, 무기
+EQUIP, 장비
+CONSUMABLE, 소모품
