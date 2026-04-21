@@ -1,4 +1,4 @@
-Id,Name,Desc,Attack,Icon
-Character1,Character1Name,Character1Desc,10,Icon_Skull01
-Character2,Character2Name,Character2Desc,20,Icon_Skull02
-Character3,Character3Name,Character3Desc,30,Icon_Skull03
+Id,Name,Desc,Attack,Icon,Grade
+Character1,Character1Name,Character1Desc,10,Icon_Skull01,Common
+Character2,Character2Name,Character2Desc,20,Icon_Skull02,Rare
+Character3,Character3Name,Character3Desc,30,Icon_Skull03,Epic

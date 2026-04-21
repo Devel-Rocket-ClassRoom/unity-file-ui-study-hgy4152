@@ -69,6 +69,8 @@ public static class DataTableManager
         stringTable.Load(newId);
         tables.Remove(oldId);
         tables.Add(newId, stringTable);
+
+
     }
 
     public static T Get<T>(string id) where T : DataTable

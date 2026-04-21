@@ -9,9 +9,16 @@ public enum ItemTypes
 {
     Weapon,
     Equip,
-    Consumable
+    Consumable,
+    NonConsumable
 }
 
+public enum Grade
+{
+    Common,
+    Rare,
+    Epic,
+}
 
 public static class Variables
 {

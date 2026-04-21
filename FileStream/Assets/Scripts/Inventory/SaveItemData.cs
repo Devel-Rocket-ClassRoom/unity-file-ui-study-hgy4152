@@ -27,4 +27,9 @@ public class SaveItemData
         newItem.ItemData = DataTableManager.ItemTable.GetRandom();
         return newItem;
     }
+
+    public override string ToString()
+    {
+        return $"{InstanceId}\n{creationTime}\n{ItemData.Id}";
+    }
 }

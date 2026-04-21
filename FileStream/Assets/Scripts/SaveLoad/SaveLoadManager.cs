@@ -42,7 +42,13 @@ public static class SaveLoadManager
         return Load(slot, Mode);
     }
 
-
+    static SaveLoadManager()
+    {
+        if(!Load())
+        {
+            Debug.LogError("세이브 파일 로드 실패");
+        }
+    }
 
     public static bool Save(int slot, SaveMode mode)
     {
@@ -95,7 +101,7 @@ public static class SaveLoadManager
 
         if (!File.Exists(path))
         {
-            return false;
+            return Save();
         }
 
         try

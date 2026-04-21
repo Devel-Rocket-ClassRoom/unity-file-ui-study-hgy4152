@@ -10,3 +10,25 @@ Item1Desc,This is a sword.
 Item2Desc,This is a shield.
 Item3Desc,This is a bow.
 Item4Desc,This is a potion.
+NAME, Name 
+DESC, Description 
+TYPE, Type 
+VALUE, Value 
+COST, Cost 
+WEAPON, Weapon 
+EQUIP, Equipment 
+CONSUMABLE, Consumable 
+NONCONSUMABLE, Non-Consumable 
+NONE, None 
+CREATIONTIMEASCENDING, Creation Time (Ascending) 
+CREATIONTIMEDESCENDING, Creation Time (Descending) 
+NAMEASCENDING, Name (Ascending) 
+NAMEDESCENDING, Name (Descending) 
+TYPEASCENDING, Type (Ascending) 
+TYPEDESCENDING, Type (Descending) 
+VALUEASCENDING, Value (Ascending) 
+VALUEDESCENDING, Value (Descending)
+SAVE, Save
+LOAD, Load
+CREATE, Create
+DELETE, Delete

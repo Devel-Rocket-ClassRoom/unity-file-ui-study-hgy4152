@@ -96,6 +96,12 @@ public class SaveDataV3 : SaveData
 public class SaveDataV4 : SaveDataV3
 {
     public List<SaveItemData> ItemList = new List<SaveItemData>();
+    public UiInvenSlotList.SortingOptions sortingOptions;
+    public UiInvenSlotList.FilteringOptions filteringOptions;
+
+    public List<SaveCharacter> CharacterList = new List<SaveCharacter>();
+    public UiHeroList.SortingOptions characterSortingOptions;
+    public UiHeroList.FilteringOptions characterFilteringOptions;
 
     public SaveDataV4()
     {

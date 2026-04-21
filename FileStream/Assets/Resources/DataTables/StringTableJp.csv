@@ -10,3 +10,31 @@ Item1Desc,これは剣だ。
 Item2Desc,これは盾だ。
 Item3Desc,これは弓だ。
 Item4Desc,これはポーションだ。
+Character1Name,スケルトン兵士
+Character2Name,スケルトン闘士
+Character3Name,スケルトンキング
+Character1Desc,スケルトン兵士。
+Character2Desc,スケルトン闘士。
+Character3Desc,スケルトンキング。
+NAME, 名前
+DESC, 説明
+TYPE, タイプ
+VALUE, バリュー
+COST, コスト
+WEAPON, 武器
+EQUIP, 装備
+CONSUMABLE, 消耗品
+NONCONSUMABLE, 非消耗品
+NONE, なし
+CREATIONTIMEASCENDING, 日付(昇順)
+CREATIONTIMEDESCENDING, 日付(降順)
+NAMEASCENDING, 名前(昇順)
+NAMEDESCENDING, 名前(降順)
+TYPEASCENDING, タイプ(昇順)
+TYPEDESCENDING, タイプ(降順)
+VALUEASCENDING, バリュー(昇順)
+VALUEDESCENDING, バリュー(降順)
+SAVE, 保存
+LOAD, 読み込み
+CREATE, 作成
+DELETE, 削除
