@@ -62,9 +62,12 @@ public class UiInvenSlotList : MonoBehaviour
 
 
     private List<UiInvenSlot> uiSlotList = new List<UiInvenSlot>();
+
     // 정렬을 위한 리스트
     private List<SaveItemData> saveItemDataList = new List<SaveItemData>(); 
+
     public UiItemInfo itemInfo;
+    public PopUpInventory equipSlot;
 
     public UiInvenSlot prefab;
     public ScrollRect scrollRect;
@@ -108,8 +111,13 @@ public class UiInvenSlotList : MonoBehaviour
 
     private void OnSelectSlot(SaveItemData saveItemData)
     {
-        Debug.Log(saveItemData);
-        itemInfo.SetSaveItemData(saveItemData);
+        //Debug.Log(saveItemData);
+        //itemInfo.SetSaveItemData(saveItemData);
+
+        // 장착 슬롯에 아이템 아이콘 띄우기
+        equipSlot.button.image.sprite = prefab.button.image.sprite;
+        equipSlot.icon.sprite = saveItemData.ItemData.SpriteIcon;
+
     }
 
     private void Start()

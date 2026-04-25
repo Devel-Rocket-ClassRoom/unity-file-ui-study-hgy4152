@@ -6,8 +6,7 @@ public class SaveCharacter
 {
     public Guid InstanceId { get; set; }
 
-    [JsonConverter(typeof(ItemDataConverter))]
-
+    [JsonConverter(typeof(CharacterDataConverter))]
     public CharacterData CharacterData;
     public DateTime creationTime { get; set; }
 

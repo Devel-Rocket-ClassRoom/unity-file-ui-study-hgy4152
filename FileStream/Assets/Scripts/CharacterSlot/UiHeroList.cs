@@ -55,7 +55,8 @@ public class UiHeroList : MonoBehaviour
     private List<UiHeroSlot> uiSlotList = new List<UiHeroSlot>();
     // 정렬을 위한 리스트
     private List<SaveCharacter> saveCharacterDataList = new List<SaveCharacter>();
-    public UiItemInfo itemInfo;
+
+    public UiHeroInfo HeroInfo;
 
     public UiHeroSlot prefab;
     public ScrollRect scrollRect;
@@ -100,7 +101,7 @@ public class UiHeroList : MonoBehaviour
     private void OnSelectSlot(SaveCharacter saveCharacter)
     {
         Debug.Log(saveCharacter);
-        //CharacterInfo.SetSaveCharacter(saveCharacter);
+        HeroInfo.SetCharacterInfo(saveCharacter);
     }
 
     private void Start()
